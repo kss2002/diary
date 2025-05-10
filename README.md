@@ -50,6 +50,7 @@
 
 ## 🗺️ 서비스 플로우
 
+```mermaid
 flowchart TB
     A[Login / Sign Up - Google/Kakao] --> B[Home]
     B --> C[Write New Diary]
@@ -61,10 +62,8 @@ flowchart TB
     D -.-> P1[Download PDF Report - Premium]
     D -.-> P2[Custom AI Feedback - Premium]
     D -.-> P3[Daily Emotion Emoji Generation - Premium]
+```
 
-> 해당 플로우차트와 SVG/이미지를 `/docs/assets/` 경로에 저장하는 것을 권장합니다.
-
----
 
 ## 🔒 보안 및 개인정보 보호
 - 사용자 데이터 전체 암호화 저장
