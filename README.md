@@ -1,4 +1,4 @@
-# ✍️ MindNote - AI 기반 감성 일기 분석 서비스
+# ✍️💭 MindNote - AI 기반 감성 일기 & 심리 분석 서비스
 
 ## 📋 프로젝트 소개
 > **MindNote**(가칭)는 OpenAI 기반 LLM을 활용해 사용자의 일기를 분석하고, 감정 및 심리 상태를 피드백해 주는 웹/앱 기반 서비스입니다.
@@ -50,19 +50,17 @@
 
 ## 🗺️ 서비스 플로우
 
-```mermaid
 flowchart TB
-    A[Login / Sign Up (Google, Kakao)] --> B[Home]
+    A[Login / Sign Up - Google/Kakao] --> B[Home]
     B --> C[Write New Diary]
     B --> E[View Past Diary Reports]
     B --> Z[My Page / Settings]
     C --> D[Emotion Analysis]
     D --> E[Auto-save to History]
-    E -.-> F[Expert Counseling (Premium)]
-    D -.-> P1[Download PDF Report (Premium)]
-    D -.-> P2[Custom AI Feedback (Premium)]
-    D -.-> P3[Daily Emotion Emoji Generation (Premium)]
-```
+    E -.-> F[Expert Counseling - Premium]
+    D -.-> P1[Download PDF Report - Premium]
+    D -.-> P2[Custom AI Feedback - Premium]
+    D -.-> P3[Daily Emotion Emoji Generation - Premium]
 
 > 해당 플로우차트와 SVG/이미지를 `/docs/assets/` 경로에 저장하는 것을 권장합니다.
 
