@@ -1,0 +1,119 @@
+.diary-entry {
+  background-color: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-6);
+  animation: slideUp 0.5s ease-out;
+}
+
+.diary-entry h2 {
+  color: var(--neutral-800);
+  font-size: var(--font-xl);
+  margin-bottom: var(--space-6);
+  text-align: center;
+}
+
+.emotion-selector {
+  margin-bottom: var(--space-6);
+}
+
+.emotion-selector h3 {
+  margin-bottom: var(--space-3);
+  font-size: var(--font-lg);
+  color: var(--neutral-700);
+}
+
+.emotion-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
+}
+
+.emotion-btn {
+  padding: var(--space-3);
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-md);
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: var(--font-md);
+}
+
+.emotion-btn:hover {
+  background-color: var(--neutral-100);
+}
+
+.emotion-btn.selected {
+  border-color: var(--primary-color);
+  background-color: var(--primary-light);
+}
+
+.entry-content {
+  margin-bottom: var(--space-6);
+}
+
+.entry-content h3 {
+  margin-bottom: var(--space-3);
+  font-size: var(--font-lg);
+  color: var(--neutral-700);
+}
+
+.entry-content textarea {
+  width: 100%;
+  padding: var(--space-3);
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-md);
+  resize: vertical;
+  font-size: var(--font-md);
+  line-height: 1.6;
+  transition: border-color 0.2s;
+}
+
+.entry-content textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(91, 138, 240, 0.1);
+}
+
+.entry-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.save-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-6);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.save-btn:hover {
+  background-color: #476dd9;
+  transform: translateY(-2px);
+}
+
+.save-btn:active {
+  transform: translateY(0);
+}
+
+.save-message {
+  color: #16a34a;
+  font-size: var(--font-sm);
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .diary-entry {
+    padding: var(--space-4);
+  }
+  
+  .emotion-buttons {
+    grid-template-columns: 1fr;
+  }
+}
